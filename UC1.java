@@ -1,13 +1,52 @@
 public class UC1 {
+
     public static void main(String[] args) {
 
-        System.out.println(" *****   *****   ******   ***** ");
-        System.out.println("*     * *     *  *     * *     *");
-        System.out.println("*     * *     *  *     * *     *");
-        System.out.println("*     * *     *  ******  *     *");
-        System.out.println("*     * *     *  *       *     *");
-        System.out.println("*     * *     *  *       *     *");
-        System.out.println(" *****   *****   *        ***** ");
+        String[] o = getO();
+        String[] p = getP();
+        String[] s = getS();
 
+        for (int i = 0; i < o.length; i++) {
+            System.out.println(o[i] + "  " + o[i] + "  " + p[i] + "  " + s[i]);
+        }
+    }
+
+    // Method for O
+    public static String[] getO() {
+        return new String[]{
+                " ***** ",
+                "*     *",
+                "*     *",
+                "*     *",
+                "*     *",
+                "*     *",
+                " ***** "
+        };
+    }
+
+    // Method for P
+    public static String[] getP() {
+        return new String[]{
+                "****** ",
+                "*     *",
+                "*     *",
+                "****** ",
+                "*      ",
+                "*      ",
+                "*      "
+        };
+    }
+
+    // Method for S
+    public static String[] getS() {
+        return new String[]{
+                " ***** ",
+                "*      ",
+                "*      ",
+                " ***** ",
+                "      *",
+                "      *",
+                " ***** "
+        };
     }
 }
